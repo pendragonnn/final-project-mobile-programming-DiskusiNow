@@ -13,6 +13,9 @@
         android:theme="@style/Theme.FinalprojectDiskusiNow"
         tools:targetApi="31">
         <activity
+            android:name=".UI.AboutUsActivity"
+            android:exported="false" />
+        <activity
             android:name=".UI.SplashScreenActivity"
             android:exported="false" />
         <activity

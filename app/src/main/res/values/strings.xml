@@ -6,7 +6,7 @@
     <string name="about_us">Tentang Kami</string>
     <string name="explain_app">DiskusiNow memberikan akses instan ke ruang diskusi yang Anda butuhkan tanpa kerumitan. Dengan aplikasi ini, Anda dapat dengan mudah melihat ketersediaan ruang diskusi di Perpustakaan UPN Veteran Jakarta dan memesan langsung melalui perangkat seluler Anda. Rencanakan pertemuan kelompok, rapat organisasi, atau sesi belajar tanpa hambatan. Dapatkan notifikasi real-time dan pengingat untuk memastikan Anda tidak melewatkan pertemuan apa pun. DiskusiNow meningkatkan efisiensi dan kemudahan dalam pemesanan ruang diskusi di Perpustakaan UPN Veteran Jakarta melalui aplikasi berbasis Android.</string>
     <string name="made_by">Aplikasi ini dibangun oleh: </string>
-    <string name="wisnu">Wisnu Andika - 2110511043</string>
-    <string name="rizky">Rizky Al Arief - 2110511069 </string>
-    <string name="muharim">Muharim Awaluddin - 2110511074</string>
+    <string name="weare">Wisnu Andika - 2110511043\n
+        Rizky Al Arief - 2110511069\n
+        Muharim Awaluddin - 2110511074</string>
 </resources>
