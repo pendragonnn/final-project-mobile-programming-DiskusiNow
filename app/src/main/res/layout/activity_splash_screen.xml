@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/green_600"
+    android:background="@drawable/splash_screen_background"
     tools:context=".UI.SplashScreenActivity">
 
     <ImageView
@@ -23,7 +23,6 @@
         android:layout_marginTop="20dp"
         android:fontFamily="@font/inter_bold"
         android:text="@string/title_app"
-        android:textColor="@color/white"
         android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
