@@ -203,6 +203,13 @@
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
             </LinearLayout>
+            <Button
+                android:id="@+id/btn_contact_us_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/green_700"
+                android:textColor="@color/white"
+                android:text="Submit" />
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 </LinearLayout>
