@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="24dp"
+    android:background="@color/gray_background"
+    android:paddingTop="40dp"
+    android:orientation="vertical"
+    tools:context=".UI.LoginActivity">
+
+    <!--  Logo & Welcome Message Linear Layout  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/logo_upnvj"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="@string/login_welcome"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/inter"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:text="@string/login_welcome_description"/>
+    </LinearLayout>
+
+    <!--  Login Form Linear Layout  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/inter"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:text="@string/login_email" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="@drawable/bg_roundrect_ripple_light_border"
+            android:layout_marginBottom="16dp"
+            android:paddingVertical="8dp">
+
+            <EditText
+                android:id="@+id/edt_login_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/login_email_hint"
+                android:inputType="textEmailAddress"
+                android:lines="5"
+                android:padding="8dp" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/inter"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:text="@string/login_password" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="@drawable/bg_roundrect_ripple_light_border"
+            android:layout_marginBottom="8dp"
+            android:paddingVertical="8dp">
+
+            <EditText
+                android:id="@+id/edt_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/login_password_hint"
+                android:inputType="textPassword"
+                android:lines="5"
+                android:drawableEnd="@drawable/ic_login_padlock"
+                android:padding="8dp" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="14sp"
+            android:textColor="@color/green_900"
+            android:text="@string/login_forget_password"/>
+    </LinearLayout>
+    
+    <!--  Login Button Linear Layout  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="32dp">
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green_700"
+            android:layout_marginBottom="7dp"
+            android:text="@string/login_button" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="14sp"
+                android:text="@string/login_dont_have_acount" />
+            <TextView
+                android:id="@+id/tv_click_here"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="14sp"
+                android:textColor="@color/green_900"
+                android:text="@string/login_click_here" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
