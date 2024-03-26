@@ -23,4 +23,18 @@
     <string name="weare">Wisnu Andika - 2110511043\n
         Rizky Al Arief - 2110511069\n
         Muharim Awaluddin - 2110511074</string>
+
+    <!--  Contact Us Activity  -->
+    <string name="contact_us_description">Butuh bantuan atau punya pertanyaan? jangan ragu untuk menghubungi kami untuk segala keperluan terkait aplikasi ini</string>
+
+    <string name="contact_us_form_name">Nama</string>
+    <string name="contact_us_form_name_hint">Masukan Nama Anda</string>
+
+    <string name="contact_us_form_email">Email</string>
+    <string name="contact_us_form_email_hint">Masukan Email Anda</string>
+
+    <string name="contact_us_form_message">Pesan</string>
+    <string name="contact_us_form_message_hint">Masukan Pesan Anda</string>
+
+
 </resources>
