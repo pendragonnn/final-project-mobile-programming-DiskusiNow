@@ -11,6 +11,7 @@
         Muharim Awaluddin - 2110511074</string>
 
     <!--  Contact Us Activity  -->
+    <string name="contact_us">Hubungi Kami</string>
     <string name="contact_us_description">Butuh bantuan atau punya pertanyaan? jangan ragu untuk menghubungi kami untuk segala keperluan terkait aplikasi ini</string>
 
     <string name="contact_us_form_name">Nama</string>
@@ -21,6 +22,7 @@
 
     <string name="contact_us_form_message">Pesan</string>
     <string name="contact_us_form_message_hint">Masukan Pesan Anda</string>
+    <!--  Contact Us Activity  -->
 
 
 </resources>
