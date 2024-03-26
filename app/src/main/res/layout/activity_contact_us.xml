@@ -37,7 +37,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/inter_bold"
-                android:text="@string/about_us"
+                android:text="@string/contact_us"
                 android:textColor="@color/white"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
