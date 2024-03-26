@@ -24,5 +24,23 @@
     <string name="contact_us_form_message_hint">Masukan Pesan Anda</string>
     <!--  Contact Us Activity  -->
 
+    <!--  Log In Activity  -->
+    <string name="login_welcome">Selamat datang kembali!</string>
+    <string name="login_welcome_description">Masuklah ke akun Anda untuk melanjutkan.</string>
+
+    <string name="login_email">Email</string>
+    <string name="login_email_hint">Masukkan Email Anda</string>
+
+    <string name="login_password">Kata Sandi</string>
+    <string name="login_password_hint">Masukkan Kata Sandi Anda</string>
+
+    <string name="login_forget_password">Lupa Kata Sandi?</string>
+
+    <string name="login_button">Masuk</string>
+
+    <string name="login_dont_have_acount">Belum mempunyai akun?</string>
+    <string name="login_click_here">Daftar di sini</string>
+    <!--  Log In Activity  -->
+
 
 </resources>
