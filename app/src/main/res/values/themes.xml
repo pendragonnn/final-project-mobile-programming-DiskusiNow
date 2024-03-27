@@ -2,12 +2,22 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.FinalprojectDiskusiNow" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+         <item name="colorPrimary">@color/green_900</item>
         <item name="android:windowBackground">@color/gray_background</item>
     </style>
 
     <style name="NavigationCardView" parent="@style/Widget.MaterialComponents.CardView">
         <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialCardView.Cut</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <style name="ButtonShareView" parent="@style/ShapeAppearanceOverlay.Material3.Corner.Bottom">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Material3.CustomCut</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.Material3.CustomCut" parent="">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">8dp</item>
     </style>
     <style name="ShapeAppearanceOverlay.MaterialCardView.Cut" parent="">
         <item name="cornerSizeTopRight">0dp</item>
