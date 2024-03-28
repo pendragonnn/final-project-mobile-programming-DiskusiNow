@@ -14,6 +14,9 @@
         tools:targetApi="31">
         <activity
             android:name=".UI.RegisterActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".UI.RoomInformationActivity"
             android:exported="false" />
         <activity
             android:name=".UI.ResultPageActivity"
