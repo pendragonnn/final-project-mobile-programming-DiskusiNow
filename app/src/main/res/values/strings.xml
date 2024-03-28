@@ -2,6 +2,25 @@
     <string name="app_name">final-project-DiskusiNow</string>
 
     <string name="title_app">DiskusiNow</string>
+    <string name="information_room">Informasi Ruangan</string>
+    <string name="name_room1">Ruang 1A</string>
+    <string name="name_room2">Ruang 1B</string>
+    <string name="name_room3">Ruang 2A</string>
+    <string name="name_room4">Ruang 2B</string>
+    <string name="name_floor">Lantai 1</string>
+    <string name="name_floor2">Lantai 4</string>
+    <string name="name_capasity">Kapasitas 5 orang</string>
+    <string name="name_keterangan">Keterangan waktu</string>
+    <string name="name_status1">Belum dipesan</string>
+    <string name="name_status2">Sudah dipesan</string>
+    <string name="time1">08:00</string>
+    <string name="time2">09:00</string>
+    <string name="time3">10:00</string>
+    <string name="time4">11:00</string>
+    <string name="time5">13:00</string>
+    <string name="time6">14:00</string>
+    <string name="time7">15:00</string>
+    <string name="time8">16:00</string>
 
     <string name="about_us">Tentang Kami</string>
 
