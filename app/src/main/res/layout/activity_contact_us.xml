@@ -52,7 +52,8 @@
         android:layout_marginEnd="32dp"
         android:layout_height="wrap_content"
         app:cardCornerRadius="16dp"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="?attr/cardBackgroundColor"
+        app:cardElevation="4dp"
         android:layout_gravity="center">
 
         <!--    Main Linear Layout    -->
@@ -110,24 +111,19 @@
                         android:fontFamily="@font/inter_bold"
                         />
 
-                    <androidx.cardview.widget.CardView
+                    <com.google.android.material.card.MaterialCardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:foreground="@drawable/bg_roundrect_ripple_light_border"
-                        android:padding="8dp">
+                        app:cardCornerRadius="8dp"
+                        android:backgroundTint="?attr/cardBackgroundColor">
 
                         <EditText
                             android:id="@+id/edt_contact_us_name"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
-                            android:background="@null"
                             android:hint="@string/contact_us_form_name_hint"
-                            android:fontFamily="@font/inter"
-                            android:inputType="text|textNoSuggestions"
-                            android:lines="5"
-                            android:padding="8dp" />
-                    </androidx.cardview.widget.CardView>
+                            style="@style/TextEditComponent"
+                            android:lines="2"
+                            android:inputType="text|textNoSuggestions" />
+                    </com.google.android.material.card.MaterialCardView>
                 </LinearLayout>
 
 
@@ -147,23 +143,19 @@
                         android:fontFamily="@font/inter_bold"
                         />
 
-                    <androidx.cardview.widget.CardView
+                    <com.google.android.material.card.MaterialCardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:foreground="@drawable/bg_roundrect_ripple_light_border"
-                        android:padding="8dp">
+                        app:cardCornerRadius="8dp"
+                        android:backgroundTint="?attr/cardBackgroundColor">
 
                         <EditText
                             android:id="@+id/edt_contact_us_email"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
-                            android:background="@null"
+                            style="@style/TextEditComponent"
                             android:hint="@string/contact_us_form_email_hint"
                             android:inputType="textEmailAddress|textNoSuggestions"
-                            android:lines="1"
-                            android:padding="8dp" />
-                    </androidx.cardview.widget.CardView>
+                            android:lines="1"/>
+                    </com.google.android.material.card.MaterialCardView>
                 </LinearLayout>
 
                 <!--        Linear Layout For Name Form        -->
@@ -182,26 +174,21 @@
                         android:textSize="19sp"
                         android:textStyle="bold" />
 
-                    <androidx.cardview.widget.CardView
+                    <com.google.android.material.card.MaterialCardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:foreground="@drawable/bg_roundrect_ripple_light_border"
-                        android:padding="8dp">
-
+                        app:cardCornerRadius="8dp"
+                        android:backgroundTint="?attr/cardBackgroundColor">
                         <EditText
                             android:id="@+id/edt_contact_us_message"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
-                            android:background="@null"
+                            style="@style/TextEditComponent"
                             android:hint="@string/contact_us_form_message_hint"
                             android:inputType="textMultiLine"
                             android:lines="5"
                             android:maxLines="5"
                             android:minLines="5"
-                            android:padding="8dp"
                             android:gravity="top|start"/>
-                    </androidx.cardview.widget.CardView>
+                    </com.google.android.material.card.MaterialCardView>
                 </LinearLayout>
             </LinearLayout>
             <Button
@@ -211,7 +198,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/green_700"
                 android:textColor="@color/white"
-                android:text="Submit" />
+                android:text="@string/submit" />
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 </LinearLayout>

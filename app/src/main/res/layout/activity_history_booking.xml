@@ -52,6 +52,8 @@
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
             app:cardCornerRadius="16dp"
+            android:backgroundTint="?attr/cardBackgroundColor"
+            app:cardElevation="4dp"
             android:layout_marginBottom="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -165,6 +167,8 @@
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
             app:cardCornerRadius="16dp"
+            android:backgroundTint="?attr/cardBackgroundColor"
+            app:cardElevation="4dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <LinearLayout

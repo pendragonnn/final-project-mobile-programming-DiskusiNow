@@ -55,23 +55,20 @@
             android:textSize="14sp"
             android:text="@string/login_email" />
 
-        <androidx.cardview.widget.CardView
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:foreground="@drawable/bg_roundrect_ripple_light_border"
+            app:cardCornerRadius="8dp"
+            android:backgroundTint="?attr/cardBackgroundColor"
             android:layout_marginBottom="16dp"
             android:paddingVertical="8dp">
 
             <EditText
                 android:id="@+id/edt_login_email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@null"
+                style="@style/TextEditComponent"
                 android:hint="@string/login_email_hint"
-                android:inputType="textEmailAddress"
-                android:lines="5"
-                android:padding="8dp" />
-        </androidx.cardview.widget.CardView>
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.card.MaterialCardView>
 
         <TextView
             android:layout_width="wrap_content"
@@ -82,24 +79,33 @@
             android:textSize="14sp"
             android:text="@string/login_password" />
 
-        <androidx.cardview.widget.CardView
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:foreground="@drawable/bg_roundrect_ripple_light_border"
-            android:layout_marginBottom="8dp"
-            android:paddingVertical="8dp">
+            app:cardCornerRadius="8dp"
+            android:backgroundTint="?attr/cardBackgroundColor"
+            android:layout_marginBottom="8dp">
 
-            <EditText
-                android:id="@+id/edt_login_password"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@null"
-                android:hint="@string/login_password_hint"
-                android:inputType="textPassword"
-                android:lines="5"
-                android:drawableEnd="@drawable/ic_login_padlock"
-                android:padding="8dp" />
-        </androidx.cardview.widget.CardView>
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/edt_login_password"
+                    style="@style/TextEditComponent"
+                    android:hint="@string/login_password_hint"
+                    android:inputType="textPassword" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_login_padlock" />
+            </RelativeLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
 
         <TextView
             android:layout_width="wrap_content"

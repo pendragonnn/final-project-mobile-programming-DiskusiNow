@@ -41,6 +41,7 @@
 
     <string name="contact_us_form_message">Pesan</string>
     <string name="contact_us_form_message_hint">Masukan Pesan Anda</string>
+    <string name="submit">Submit</string>
     <!--  Contact Us Activity  -->
 
     <!--  Log In Activity  -->
