@@ -16,6 +16,15 @@
             android:name=".UI.RoomInformationActivity"
             android:exported="false" />
         <activity
+            android:name=".UI.ResultPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.ContactUsActivity"
+            android:exported="false" />
+        <activity
             android:name=".UI.HistoryBookingActivity"
             android:exported="false" />
         <activity
