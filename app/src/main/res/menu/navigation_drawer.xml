@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_history"
+            android:icon="@drawable/icon_clock"
+            android:title="@string/drawer_history"/>
+        <item
+            android:id="@+id/drawer_about_us"
+            android:icon="@drawable/icon_about"
+            android:title="@string/drawer_about_us" />
+        <item
+            android:id="@+id/drawer_contact_us"
+            android:icon="@drawable/icon_contact"
+            android:title="@string/drawer_contact_us" />
+        <item
+            android:id="@+id/drawer_privacy"
+            android:icon="@drawable/icon_privacy"
+            android:title="@string/drawer_privacy" />
+        <item
+            android:id="@+id/drawer_out"
+            android:icon="@drawable/icon_out"
+            android:title="@string/drawer_out" />
+    </group>
+</menu>

@@ -116,4 +116,10 @@
         <item>Ruang 2A</item>
         <item>Ruang 2B</item>
     </string-array>
+
+    <string name="drawer_history">Riwayat Pemesanan</string>
+    <string name="drawer_about_us">Tentang DiskusiNow</string>
+    <string name="drawer_contact_us">Hubungi Kami</string>
+    <string name="drawer_privacy">Kebijakan dan Privasi</string>
+    <string name="drawer_out">Keluar</string>
 </resources>
