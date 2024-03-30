@@ -93,4 +93,27 @@
     <string name="register_button">Daftar</string>
     <string name="register_already_have_account">Sudah mempunyai akun?</string>
     <string name="register_click_here">Masuk di sini</string>
+
+    <string name="form_welcome">Selamat Datang di DiskusiNow!</string>
+    <string name="form_welcome_description">Silakan isi formulir di bawah ini untuk memesan ruang diskusi kami.</string>
+    <string name="form_no_contact">Nomor Kontak</string>
+    <string name="form_no_contact_hint">Masukan Nomor Kontak Anda</string>
+    <string name="form_date">Tanggal Pemesanan</string>
+    <string name="form_date_hint">DD/MM/YYYY</string>
+    <string name="form_room">Ruangan</string>
+    <string name="form_room_hint">Pilih Ruangan</string>
+    <string name="form_start_time">Waktu Mulai</string>
+    <string name="form_start_time_hint">--:--</string>
+    <string name="form_total_participant">Jumlah Peserta</string>
+    <string name="form_description">Keterangan Keperluan</string>
+    <string name="form_description_hint">Masukan Keterangan Keperluan Anda</string>
+    <string name="form_notes">Catatan Penting: Jika Anda tidak tiba di resepsionis dalam waktu 10 menit setelah waktu mulai yang Anda tentukan, reservasi Anda akan otomatis dibatalkan.</string>
+
+    <string-array name="form_room_spinner">
+        <item>Pilih Ruangan</item>
+        <item>Ruang 1A</item>
+        <item>Ruang 1B</item>
+        <item>Ruang 2A</item>
+        <item>Ruang 2B</item>
+    </string-array>
 </resources>
