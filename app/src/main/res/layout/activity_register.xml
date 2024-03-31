@@ -1,229 +1,234 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingHorizontal="40dp"
-    android:paddingVertical="24dp"
     android:orientation="vertical"
     tools:context=".UI.RegisterActivity">
 
-    <!--  Logo & Welcome Message Linear Layout  -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="24dp"
         android:orientation="vertical">
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="32dp"
-            android:src="@drawable/logo_upnvj"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/inter_bold"
-            android:layout_gravity="center"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:text="@string/register_welcome"
-            android:layout_marginBottom="8dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:fontFamily="@font/inter"
-            android:textStyle="bold"
-            android:textSize="14sp"
-            android:text="@string/register_welcome_description"/>
-    </LinearLayout>
-    <!--  Login Form Linear Layout  -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginBottom="32dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="@font/inter"
-            android:textStyle="bold"
-            android:textSize="14sp"
-            android:text="@string/register_name" />
-
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="8dp"
-            android:backgroundTint="?attr/cardBackgroundColor"
-            android:layout_marginBottom="16dp"
-            android:paddingVertical="8dp">
-
-            <EditText
-                android:id="@+id/edt_register_name"
-                style="@style/TextEditComponent"
-                android:hint="@string/register_name_hint"
-                android:inputType="text" />
-        </com.google.android.material.card.MaterialCardView>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="@font/inter"
-            android:textStyle="bold"
-            android:textSize="14sp"
-            android:text="@string/login_email" />
-
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="8dp"
-            android:backgroundTint="?attr/cardBackgroundColor"
-            android:layout_marginBottom="16dp"
-            android:paddingVertical="8dp">
-
-            <EditText
-                android:id="@+id/edt_login_email"
-                style="@style/TextEditComponent"
-                android:hint="@string/login_email_hint"
-                android:inputType="textEmailAddress" />
-        </com.google.android.material.card.MaterialCardView>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="@font/inter"
-            android:textStyle="bold"
-            android:textSize="14sp"
-            android:text="@string/register_nim" />
-
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="8dp"
-            android:backgroundTint="?attr/cardBackgroundColor"
-            android:layout_marginBottom="16dp"
-            android:paddingVertical="8dp">
-
-            <EditText
-                android:id="@+id/edt_register_nim"
-                style="@style/TextEditComponent"
-                android:hint="@string/register_nim_hint"
-                android:inputType="text" />
-        </com.google.android.material.card.MaterialCardView>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="@font/inter"
-            android:textStyle="bold"
-            android:textSize="14sp"
-            android:text="@string/login_password" />
-
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="8dp"
-            android:backgroundTint="?attr/cardBackgroundColor"
-            android:layout_marginBottom="16dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <EditText
-                    android:id="@+id/edt_register_password"
-                    style="@style/TextEditComponent"
-                    android:hint="@string/login_password_hint"
-                    android:inputType="textPassword" />
-
-                <ImageView
-                    android:id="@+id/lock_edt_password"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerInParent="true"
-                    android:src="@drawable/ic_login_padlock" />
-            </RelativeLayout>
-        </com.google.android.material.card.MaterialCardView>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="@font/inter"
-            android:textStyle="bold"
-            android:textSize="14sp"
-            android:text="@string/register_confirm_password" />
-
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="8dp"
-            android:backgroundTint="?attr/cardBackgroundColor">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <EditText
-                    android:id="@+id/edt_register_confirm_password"
-                    style="@style/TextEditComponent"
-                    android:hint="@string/register_password_hint_confirm"
-                    android:inputType="textPassword" />
-
-                <ImageView
-                    android:id="@+id/lock_edt_confirm_password"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerInParent="true"
-                    android:layout_marginEnd="8dp"
-                    android:src="@drawable/ic_login_padlock" />
-            </RelativeLayout>
-        </com.google.android.material.card.MaterialCardView>
-
-    </LinearLayout>
-
-    <!--  Login Button Linear Layout  -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <Button
-            style="@style/ButtonShareView"
-            android:id="@+id/btn_login"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/green_700"
-            android:layout_marginBottom="7dp"
-            android:text="@string/login_button" />
-
+        <!--  Logo & Welcome Message Linear Layout  -->
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:orientation="horizontal">
+            android:layout_marginBottom="32dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="32dp"
+                android:src="@drawable/logo_upnvj"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
                 android:fontFamily="@font/inter_bold"
-                android:textSize="14sp"
-                android:text="@string/register_already_have_account"/>
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="@string/register_welcome"
+                android:layout_marginBottom="8dp"/>
             <TextView
-                android:id="@+id/tv_click_here"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/inter_bold"
+                android:textAlignment="center"
+                android:fontFamily="@font/inter"
+                android:textStyle="bold"
                 android:textSize="14sp"
-                android:textColor="@color/green_900"
-                android:text="@string/register_click_here" />
+                android:text="@string/register_welcome_description"/>
+        </LinearLayout>
+        <!--  Login Form Linear Layout  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="32dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/inter"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:text="@string/register_name" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                android:backgroundTint="?attr/cardBackgroundColor"
+                android:layout_marginBottom="16dp"
+                android:paddingVertical="8dp">
+
+                <EditText
+                    android:id="@+id/edt_register_name"
+                    style="@style/TextEditComponent"
+                    android:hint="@string/register_name_hint"
+                    android:inputType="text" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/inter"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:text="@string/login_email" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                android:backgroundTint="?attr/cardBackgroundColor"
+                android:layout_marginBottom="16dp"
+                android:paddingVertical="8dp">
+
+                <EditText
+                    android:id="@+id/edt_login_email"
+                    style="@style/TextEditComponent"
+                    android:hint="@string/login_email_hint"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/inter"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:text="@string/register_nim" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                android:backgroundTint="?attr/cardBackgroundColor"
+                android:layout_marginBottom="16dp"
+                android:paddingVertical="8dp">
+
+                <EditText
+                    android:id="@+id/edt_register_nim"
+                    style="@style/TextEditComponent"
+                    android:hint="@string/register_nim_hint"
+                    android:inputType="text" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/inter"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:text="@string/login_password" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                android:backgroundTint="?attr/cardBackgroundColor"
+                android:layout_marginBottom="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <EditText
+                        android:id="@+id/edt_register_password"
+                        style="@style/TextEditComponent"
+                        android:hint="@string/login_password_hint"
+                        android:inputType="textPassword" />
+
+                    <ImageView
+                        android:id="@+id/lock_edt_password"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_login_padlock" />
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/inter"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:text="@string/register_confirm_password" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                android:backgroundTint="?attr/cardBackgroundColor">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <EditText
+                        android:id="@+id/edt_register_confirm_password"
+                        style="@style/TextEditComponent"
+                        android:hint="@string/register_password_hint_confirm"
+                        android:inputType="textPassword" />
+
+                    <ImageView
+                        android:id="@+id/lock_edt_confirm_password"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/ic_login_padlock" />
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <!--  Login Button Linear Layout  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                style="@style/ButtonShareView"
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/green_700"
+                android:layout_marginBottom="7dp"
+                android:text="@string/login_button" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/inter_bold"
+                    android:textSize="14sp"
+                    android:text="@string/register_already_have_account"/>
+                <TextView
+                    android:id="@+id/tv_click_here"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/green_900"
+                    android:text="@string/register_click_here" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+</ScrollView>

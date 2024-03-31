@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">final-project-DiskusiNow</string>
+    <string name="app_name">DiskusiNow</string>
 
-    <string name="title_app">DiskusiNow</string>
+    <!--  Room Information Activity  -->
     <string name="information_room">Informasi Ruangan</string>
     <string name="name_room1">Ruang 1A</string>
     <string name="name_room2">Ruang 1B</string>
@@ -21,24 +21,50 @@
     <string name="time6">14:00</string>
     <string name="time7">15:00</string>
     <string name="time8">16:00</string>
+    <!--  Room Information Activity  -->
 
-    <string name="about_us">Tentang Kami</string>
-
+    <!--  History Activity  -->
     <string name="history_page">Riwayat Pemesanan</string>
     <string name="confirm">Terkonfirmasi</string>
     <string name="cancel">Dibatalkan</string>
     <string name="result_page">Hasil Pemesanan</string>
+
+    <!--  Dummy Data History Activity  -->
+    <string name="room_history">Ruang Diskusi 2B</string>
+    <string name="capacity_history">4 orang</string>
+    <string name="description_history">Presentasi internal untuk menyampaikan hasil riset pasar.</string>
     <string name="id_history">#0512</string>
     <string name="date_history">10 Maret 2024</string>
     <string name="name_history">Ryan Gosling</string>
     <string name="phone_number_history">083812721450</string>
-    <string name="start_time_history">14:00</string>
-
+    <string name="start_time_history">15:00</string>
     <string name="sd">s/d</string>
-    <string name="end_time_history">15:00</string>
-    <string name="room_history">Ruang Diskusi 2B</string>
-    <string name="capacity_history">4 orang</string>
-    <string name="description_history">Presentasi internal untuk menyampaikan hasil riset pasar.</string>
+    <string name="end_time_history">16:00</string>
+
+    <string name="room_history2">Ruang Diskusi 1B</string>
+    <string name="capacity_history2">6 orang</string>
+    <string name="description_history2">Sesi Brainstorming untuk pengembangan strategi pemasaran produk baru.</string>
+    <string name="id_history2">#0335</string>
+    <string name="date_history2">20 Oktober 2023</string>
+    <string name="name_history2">Timothée Chalamet</string>
+    <string name="phone_number_history2">08372323450</string>
+    <string name="start_time_history2">17:00</string>
+    <string name="end_time_history2">18:00</string>
+
+    <string name="room_history3">Ruang Diskusi 2A</string>
+    <string name="capacity_history3">8 orang</string>
+    <string name="description_history3">Rapat Tim Proyek X untuk pembahasan status proyek dan perencanaan strategi ke depan.</string>
+    <string name="id_history3">#0061</string>
+    <string name="date_history3">06 Januari 2024</string>
+    <string name="name_history3">Madison Beer</string>
+    <string name="phone_number_history3">083812721450</string>
+    <string name="start_time_history3">09:00</string>
+    <string name="end_time_history3">10:00</string>
+    <!--  Dummy Data History Activity  -->
+    <!--  History Activity  -->
+
+    <!--  AboutUs Activity  -->
+    <string name="about_us">Tentang Kami</string>
     <string name="span">*</string>
     <string name="announcement_history">Temukan semua detail pemesanan ruangan Anda di menu Riwayat. Jadi, jika Anda perlu memeriksa pemesanan sebelumnya, cukup buka menu Riwayat. Terima kasih!</string>
     <string name="star_span">*</string>
@@ -47,6 +73,7 @@
     <string name="weare">Wisnu Andika - 2110511043\n
         Rizky Al Arief - 2110511069\n
         Muharim Awaluddin - 2110511074</string>
+    <!--  AboutUs Activity  -->
 
     <!--  Contact Us Activity  -->
     <string name="contact_us">Hubungi Kami</string>
@@ -81,7 +108,7 @@
     <string name="login_click_here">Daftar di sini</string>
     <!--  Log In Activity  -->
 
-
+    <!--  Register Activity  -->
     <string name="register_welcome">Bergabunglah dengan kami!</string>
     <string name="register_welcome_description">Daftarlah untuk mendapatkan akses penuh ke layanan kami.</string>
     <string name="register_name">Nama Lengkap</string>
@@ -93,7 +120,9 @@
     <string name="register_button">Daftar</string>
     <string name="register_already_have_account">Sudah mempunyai akun?</string>
     <string name="register_click_here">Masuk di sini</string>
+    <!--  Register Activity  -->
 
+    <!--  Form Main Activity  -->
     <string name="form_welcome">Selamat Datang di DiskusiNow!</string>
     <string name="form_welcome_description">Silakan isi formulir di bawah ini untuk memesan ruang diskusi kami.</string>
     <string name="form_no_contact">Nomor Kontak</string>
@@ -116,10 +145,13 @@
         <item>Ruang 2A</item>
         <item>Ruang 2B</item>
     </string-array>
+    <!--  Form Main Activity  -->
 
+    <!--  Navigation Drawer Activity  -->
     <string name="drawer_history">Riwayat Pemesanan</string>
     <string name="drawer_about_us">Tentang DiskusiNow</string>
     <string name="drawer_contact_us">Hubungi Kami</string>
     <string name="drawer_privacy">Kebijakan dan Privasi</string>
     <string name="drawer_out">Keluar</string>
+    <!--  Navigation Drawer Activity  -->
 </resources>
