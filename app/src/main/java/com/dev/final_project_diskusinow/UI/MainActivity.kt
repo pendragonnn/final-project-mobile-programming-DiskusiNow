@@ -36,16 +36,19 @@ class MainActivity : AppCompatActivity() {
                 R.id.drawer_history -> {
                     val intent = Intent(this, HistoryBookingActivity::class.java)
                     startActivity(intent)
+                    menuItem.isCheckable = false
                     true
                 }
                 R.id.drawer_about_us -> {
                     val intent = Intent(this, AboutUsActivity::class.java)
                     startActivity(intent)
+                    menuItem.isCheckable = false
                     true
                 }
                 R.id.drawer_contact_us -> {
                     val intent = Intent(this, ContactUsActivity::class.java)
                     startActivity(intent)
+                    menuItem.isCheckable = false
                     true
                 }
                 R.id.drawer_out -> {

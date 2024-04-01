@@ -9,301 +9,312 @@
     android:id="@+id/drawer_layout"
     tools:context=".UI.MainActivity">
 
-    <ScrollView
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <com.google.android.material.card.MaterialCardView
+            style="@style/NavigationCardView"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:backgroundTint="@color/green_600"
+            android:paddingStart="6dp"
+            android:paddingTop="24dp"
+            android:paddingEnd="6dp"
+            android:paddingBottom="8dp">
+
+            <RelativeLayout
+                android:paddingHorizontal="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/btn_navigation_drawer"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_menu" />
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/logo_upnvj"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+
+                <ImageView
+                    android:id="@+id/btn_room_information"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_information"/>
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <com.google.android.material.card.MaterialCardView
-                style="@style/NavigationCardView"
-                android:layout_width="match_parent"
-                android:layout_height="88dp"
-                android:backgroundTint="@color/green_600"
-                android:paddingStart="6dp"
-                android:paddingTop="24dp"
-                android:paddingEnd="6dp"
-                android:paddingBottom="8dp">
-
-                <RelativeLayout
-                    android:paddingHorizontal="16dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/btn_navigation_drawer"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:layout_gravity="center"
-                        android:scaleType="fitXY"
-                        android:layout_centerVertical="true"
-                        android:src="@drawable/icon_menu" />
-
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:src="@drawable/logo_upnvj"
-                        android:layout_centerVertical="true"
-                        android:layout_centerHorizontal="true"/>
-
-                    <ImageView
-                        android:id="@+id/btn_room_information"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:src="@drawable/icon_information"/>
-                </RelativeLayout>
-            </com.google.android.material.card.MaterialCardView>
             <LinearLayout
                 android:orientation="vertical"
-                android:paddingHorizontal="24dp"
-                android:paddingVertical="32dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:layout_marginBottom="16dp"
-                    android:gravity="center">
-                    <TextView
-                        android:layout_marginBottom="8dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/form_welcome"
-                        android:fontFamily="@font/inter_bold"
-                        android:textSize="24sp"
-                        android:textAlignment="center"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/form_welcome_description"
-                        android:textAlignment="center"
-                        android:fontFamily="@font/inter_medium"/>
-                </LinearLayout>
-
-                <LinearLayout
+                    android:paddingHorizontal="24dp"
+                    android:paddingVertical="32dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:fontFamily="@font/inter"
-                        android:textStyle="bold"
-                        android:textSize="14sp"
-                        android:text="@string/form_no_contact" />
-
-                    <com.google.android.material.card.MaterialCardView
+                    android:layout_height="wrap_content">
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:cardCornerRadius="8dp"
-                        android:backgroundTint="?attr/cardBackgroundColor"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
                         android:layout_marginBottom="16dp"
-                        android:paddingVertical="8dp">
-                        <EditText
-                            android:id="@+id/edt_no_contact"
-                            style="@style/TextEditComponent"
-                            android:hint="@string/form_no_contact_hint"
-                            android:inputType="number" />
-                    </com.google.android.material.card.MaterialCardView>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:fontFamily="@font/inter"
-                        android:textStyle="bold"
-                        android:textSize="14sp"
-                        android:text="@string/form_date" />
-
-                    <com.google.android.material.card.MaterialCardView
-                        android:id="@+id/card_date"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="16dp"
-                        android:backgroundTint="?attr/cardBackgroundColor"
-                        app:cardCornerRadius="8dp">
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter"
-                                android:paddingHorizontal="12dp"
-                                android:paddingVertical="10dp"
-                                android:text="@string/form_date_hint"
-                                android:textColor="#FFB8B7B8" />
-
-                            <ImageView
-                                android:layout_width="24dp"
-                                android:layout_height="24dp"
-                                android:layout_alignParentEnd="true"
-                                android:layout_centerInParent="true"
-                                android:layout_marginEnd="8dp"
-                                android:src="@drawable/icon_calendar" />
-                        </RelativeLayout>
-                    </com.google.android.material.card.MaterialCardView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:fontFamily="@font/inter"
-                        android:textStyle="bold"
-                        android:textSize="14sp"
-                        android:text="@string/form_room" />
-                    <com.google.android.material.card.MaterialCardView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:cardCornerRadius="8dp"
-                        android:backgroundTint="?attr/cardBackgroundColor"
-                        android:layout_marginBottom="16dp">
-                        <Spinner
-                            android:id="@+id/spinner_form_room"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:entries="@array/form_room_spinner"
-                            android:paddingVertical="10dp"
-                            android:spinnerMode="dropdown"
-                            android:paddingHorizontal="12dp"/>
-                    </com.google.android.material.card.MaterialCardView>
+                        android:gravity="center">
+                        <TextView
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/form_welcome"
+                            android:fontFamily="@font/inter_bold"
+                            android:textSize="24sp"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/form_welcome_description"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/inter_medium"/>
+                    </LinearLayout>
 
                     <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_marginBottom="16dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <LinearLayout
-                            android:layout_marginEnd="16dp"
-                            android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:orientation="vertical">
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="10dp"
-                                android:fontFamily="@font/inter"
-                                android:textStyle="bold"
-                                android:textSize="14sp"
-                                android:text="@string/form_start_time" />
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/inter"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:text="@string/form_no_contact" />
 
-                            <com.google.android.material.card.MaterialCardView
-                                android:id="@+id/card_start_time"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="16dp"
-                                android:backgroundTint="?attr/cardBackgroundColor"
-                                android:paddingVertical="8dp"
-                                app:cardCornerRadius="8dp">
-
-                                <EditText
-                                    android:id="@+id/edt_start_date"
-                                    style="@style/TextEditComponent"
-                                    android:hint="@string/form_start_time_hint"
-                                    android:inputType="text"
-                                    android:textAlignment="center" />
-                            </com.google.android.material.card.MaterialCardView>
-                        </LinearLayout>
-                        <LinearLayout
-                            android:layout_marginStart="16dp"
-                            android:layout_weight="1"
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="8dp"
+                            android:backgroundTint="?attr/cardBackgroundColor"
+                            android:layout_marginBottom="16dp"
+                            android:paddingVertical="8dp">
+                            <EditText
+                                android:id="@+id/edt_no_contact"
+                                style="@style/TextEditComponent"
+                                android:hint="@string/form_no_contact_hint"
+                                android:inputType="number" />
+                        </com.google.android.material.card.MaterialCardView>
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
-                            <TextView
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/inter"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:text="@string/form_date" />
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/card_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:backgroundTint="?attr/cardBackgroundColor"
+                            app:cardCornerRadius="8dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/inter"
+                                    android:paddingHorizontal="12dp"
+                                    android:paddingVertical="10dp"
+                                    android:text="@string/form_date_hint"
+                                    android:textColor="#FFB8B7B8" />
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginEnd="8dp"
+                                    android:src="@drawable/icon_calendar" />
+                            </RelativeLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/inter"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:text="@string/form_room" />
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="8dp"
+                            android:backgroundTint="?attr/cardBackgroundColor"
+                            android:layout_marginBottom="16dp">
+                            <Spinner
+                                android:id="@+id/spinner_form_room"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:entries="@array/form_room_spinner"
+                                android:paddingVertical="10dp"
+                                android:spinnerMode="dropdown"
+                                android:paddingHorizontal="12dp"/>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_marginEnd="16dp"
+                                android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginBottom="10dp"
-                                android:fontFamily="@font/inter"
-                                android:textStyle="bold"
-                                android:textSize="14sp"
-                                android:text="@string/form_total_participant" />
-                            <com.google.android.material.card.MaterialCardView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                app:cardCornerRadius="8dp"
-                                android:backgroundTint="?attr/cardBackgroundColor"
-                                android:layout_marginBottom="16dp"
-                                android:paddingVertical="8dp">
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:fontFamily="@font/inter"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:text="@string/form_start_time" />
 
-                                <EditText
-                                    android:id="@+id/edt_total_participant"
-                                    style="@style/TextEditComponent"
-                                    android:inputType="number"
-                                    android:textAlignment="center" />
-                            </com.google.android.material.card.MaterialCardView>
+                                <com.google.android.material.card.MaterialCardView
+                                    android:id="@+id/card_start_time"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="16dp"
+                                    android:backgroundTint="?attr/cardBackgroundColor"
+                                    android:paddingVertical="8dp"
+                                    app:cardCornerRadius="8dp">
+
+                                    <EditText
+                                        android:id="@+id/edt_start_date"
+                                        style="@style/TextEditComponent"
+                                        android:hint="@string/form_start_time_hint"
+                                        android:inputType="text"
+                                        android:textAlignment="center" />
+                                </com.google.android.material.card.MaterialCardView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_marginStart="16dp"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:fontFamily="@font/inter"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:text="@string/form_total_participant" />
+                                <com.google.android.material.card.MaterialCardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="8dp"
+                                    android:backgroundTint="?attr/cardBackgroundColor"
+                                    android:layout_marginBottom="16dp"
+                                    android:paddingVertical="8dp">
+
+                                    <EditText
+                                        android:id="@+id/edt_total_participant"
+                                        style="@style/TextEditComponent"
+                                        android:inputType="number"
+                                        android:textAlignment="center" />
+                                </com.google.android.material.card.MaterialCardView>
+                            </LinearLayout>
                         </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/inter"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:text="@string/form_description"/>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="8dp"
+                            android:backgroundTint="?attr/cardBackgroundColor"
+                            android:layout_marginBottom="16dp"
+                            android:paddingVertical="8dp">
+
+                            <EditText
+                                android:id="@+id/edt_description"
+                                style="@style/TextEditComponent"
+                                android:hint="@string/form_description_hint"
+                                android:inputType="text" />
+                        </com.google.android.material.card.MaterialCardView>
                     </LinearLayout>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:fontFamily="@font/inter"
-                        android:textStyle="bold"
-                        android:textSize="14sp"
-                        android:text="@string/form_description"/>
-
-                    <com.google.android.material.card.MaterialCardView
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:cardCornerRadius="8dp"
-                        android:backgroundTint="?attr/cardBackgroundColor"
                         android:layout_marginBottom="16dp"
-                        android:paddingVertical="8dp">
-
-                        <EditText
-                            android:id="@+id/edt_description"
-                            style="@style/TextEditComponent"
-                            android:hint="@string/form_description_hint"
-                            android:inputType="text" />
-                    </com.google.android.material.card.MaterialCardView>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/span"
-                        android:textColor="@color/red"
-                        android:layout_marginEnd="4dp"
-                        android:fontFamily="@font/inter_bold"
-                        android:justificationMode="inter_word" />
-                    <TextView
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/span"
+                            android:textColor="@color/red"
+                            android:layout_marginEnd="4dp"
+                            android:fontFamily="@font/inter_bold"
+                            android:justificationMode="inter_word" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/form_notes"
+                            android:justificationMode="inter_word"
+                            android:fontFamily="@font/inter_bold" />
+                    </LinearLayout>
+                    <Button
+                        style="@style/ButtonShareView"
+                        android:id="@+id/btn_form_submit"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/form_notes"
-                        android:justificationMode="inter_word"
-                        android:fontFamily="@font/inter_bold" />
+                        android:backgroundTint="@color/green_700"
+                        android:textColor="@color/white"
+                        android:text="@string/submit" />
                 </LinearLayout>
-                <Button
-                    style="@style/ButtonShareView"
-                    android:id="@+id/btn_form_submit"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/green_700"
-                    android:textColor="@color/white"
-                    android:text="@string/submit" />
             </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
+        </ScrollView>
+    </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
+        app:itemIconTint="@color/green_900"
+        android:paddingTop="20dp"
+        android:layout_marginStart="60dp"
         android:id="@+id/nav_view"
+        app:itemRippleColor="#CCE8FFE4"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:menu="@menu/navigation_drawer" />
+
 </androidx.drawerlayout.widget.DrawerLayout>
