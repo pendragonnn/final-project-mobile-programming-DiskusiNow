@@ -9,7 +9,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class ApiConfig {
     companion object{
-        private const val BASE_URL = "192.168.56.1:3000"
+        private const val BASE_URL = "http://192.168.56.1:3000"
 
         fun getApiService() : ApiService {
             val loggingInterceptor = if (BuildConfig.DEBUG) {

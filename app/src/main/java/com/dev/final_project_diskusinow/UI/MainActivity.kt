@@ -3,11 +3,10 @@ package com.dev.final_project_diskusinow.UI
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import androidx.core.view.GravityCompat
 import com.dev.final_project_diskusinow.R
+import com.dev.final_project_diskusinow.UI.resultPage.ResultPageActivity
 import com.dev.final_project_diskusinow.databinding.ActivityMainBinding
-import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

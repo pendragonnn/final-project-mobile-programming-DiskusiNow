@@ -91,7 +91,7 @@
                 android:paddingVertical="8dp">
 
                 <EditText
-                    android:id="@+id/edt_login_email"
+                    android:id="@+id/edt_register_email"
                     style="@style/TextEditComponent"
                     android:hint="@string/login_email_hint"
                     android:inputType="textEmailAddress" />
@@ -199,14 +199,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <Button
+                android:id="@+id/btn_register"
                 style="@style/ButtonShareView"
-                android:id="@+id/btn_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/green_700"
                 android:layout_marginBottom="7dp"
-                android:text="@string/login_button" />
+                android:backgroundTint="@color/green_700"
+                android:text="@string/register_button" />
 
             <LinearLayout
                 android:layout_width="wrap_content"

@@ -27,7 +27,7 @@ class UserPreferences private constructor(private val dataStore: DataStore<Prefe
         }
     }
 
-    suspend fun deleteTokenUser(tokenUser: String) {
+    suspend fun deleteTokenUser() {
         dataStore.edit { preferences ->
             preferences.remove(TOKEN_KEY)
         }

@@ -103,6 +103,7 @@
     <string name="login_forget_password">Lupa Kata Sandi?</string>
 
     <string name="login_button">Masuk</string>
+    <style name="register_nutton">Daftar</style>
 
     <string name="login_dont_have_account">Belum mempunyai akun?</string>
     <string name="login_click_here">Daftar di sini</string>

@@ -1,4 +1,4 @@
-package com.dev.final_project_diskusinow.UI
+package com.dev.final_project_diskusinow.UI.resultPage
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
