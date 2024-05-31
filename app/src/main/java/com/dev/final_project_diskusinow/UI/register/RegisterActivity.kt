@@ -30,11 +30,17 @@ class RegisterActivity : AppCompatActivity() {
             val email = binding.edtRegisterEmail.text.toString()
             val nim = binding.edtRegisterNim.text.toString()
             val password = binding.edtRegisterPassword.text.toString()
+            val confirmPassword = binding.edtRegisterConfirmPassword.text.toString()
 
-            if (name.isEmpty() || email.isEmpty() || nim.isEmpty() || password.isEmpty()) {
-                showSnackbar("All fields are required")
+
+            if (name.isNotEmpty() && email.isNotEmpty() && nim.isNotEmpty() && password.isNotEmpty() && confirmPassword.isNotEmpty()) {
+                if (password == confirmPassword) {
+                    viewModel.registerUser(RegisterRequest(name, email, nim, password))
+                } else {
+                    showSnackbar("Passwords do not match")
+                }
             } else {
-                viewModel.registerUser(RegisterRequest(name, email, nim, password))
+                showSnackbar("All fields are required")
             }
         }
 
