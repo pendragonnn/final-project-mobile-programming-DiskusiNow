@@ -12,6 +12,7 @@ import com.dev.final_project_diskusinow.data.network.request.RegisterRequest
 import com.dev.final_project_diskusinow.databinding.ActivityRegisterBinding
 import com.dev.final_project_diskusinow.utils.Result
 import com.google.android.material.snackbar.Snackbar
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 class RegisterActivity : AppCompatActivity() {
@@ -61,6 +62,7 @@ class RegisterActivity : AppCompatActivity() {
                     is Result.Success -> {
                         showLoading(false)
                         showSnackbar("Registration successful")
+                        delay(1500)
                         finish()
                     }
                     is Result.Error -> {

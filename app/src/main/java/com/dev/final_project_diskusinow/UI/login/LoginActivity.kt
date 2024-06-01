@@ -2,7 +2,6 @@ package com.dev.final_project_diskusinow.UI
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
@@ -35,9 +34,16 @@ class LoginActivity : AppCompatActivity() {
             if (email.isNotEmpty() && password.isNotEmpty()) {
                 viewModel.loginUser(LoginRequest(email, password))
             } else {
-                Toast.makeText(this, "Email and password are required", Toast.LENGTH_SHORT).show()
+                showErrorSnackbar("Email and password are required")
             }
         }
+        observeViewModel()
+    }
+
+    private fun showLoading(isLoading: Boolean) {
+    }
+
+    private fun observeViewModel() {
         val intent = Intent(this, MainActivity::class.java)
         lifecycleScope.launch {
             viewModel.loginResult.collect { result ->
@@ -59,10 +65,6 @@ class LoginActivity : AppCompatActivity() {
             }
         }
     }
-
-    private fun showLoading(isLoading: Boolean) {
-    }
-
     private fun showErrorSnackbar(errorMessage: String) {
         Snackbar.make(binding.root, errorMessage, Snackbar.LENGTH_LONG).show()
     }
