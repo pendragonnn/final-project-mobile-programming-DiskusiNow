@@ -19,8 +19,8 @@ object Injection {
     fun provideRoomRepository(dataStore: DataStore<Preferences>) : RoomRepository {
         val authRepository = provideAuthRepository(dataStore)
         val apiService = ApiConfig.getApiServiceWithAuth(authRepository)
+
         val appExecutors = AppExecutors()
-        val userPreferences = UserPreferences.getInstance(dataStore)
-        return RoomRepository.getInstance(apiService, appExecutors, userPreferences)
+        return RoomRepository.getInstance(apiService, appExecutors)
     }
 }

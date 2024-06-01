@@ -5,7 +5,6 @@ import com.dev.final_project_diskusinow.data.network.retrofit.ApiService
 import com.dev.final_project_diskusinow.utils.AppExecutors
 import com.dev.final_project_diskusinow.utils.JsonUtils
 import com.dev.final_project_diskusinow.utils.Result
-import com.dev.final_project_diskusinow.utils.UserPreferences
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
@@ -14,8 +13,7 @@ import retrofit2.HttpException
 
 class RoomRepository private constructor(
     private val apiService: ApiService,
-    private val appExecutors: AppExecutors,
-    private val userPreferences: UserPreferences
+    private val appExecutors: AppExecutors
 ){
 
     suspend fun getAllRoom() : Flow<Result<List<DataItem?>?>> = flow {
@@ -39,11 +37,10 @@ class RoomRepository private constructor(
 
         fun getInstance(
             apiService: ApiService,
-            appExecutors: AppExecutors,
-            userPreferences: UserPreferences
+            appExecutors: AppExecutors
         ): RoomRepository {
             return INSTANCE ?: synchronized(this) {
-                RoomRepository(apiService, appExecutors, userPreferences).also {
+                RoomRepository(apiService, appExecutors).also {
                     INSTANCE = it
                 }
             }

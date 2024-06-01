@@ -45,858 +45,865 @@
         </RelativeLayout>
     </com.google.android.material.card.MaterialCardView>
 
-    <ScrollView
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingVertical="32dp"
-            android:paddingHorizontal="24dp"
-            android:paddingBottom="32dp">
-
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:backgroundTint="?attr/cardBackgroundColor"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="4dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <TextView
-                            android:id="@+id/textViewLeft1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentStart="true"
-                            android:fontFamily="@font/inter_bold"
-                            android:text="@string/name_room1"
-                            android:textColor="@color/green_900"
-                            android:textSize="14sp" />
-
-                        <TextView
-                            android:id="@+id/textViewRight1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentEnd="true"
-                            android:fontFamily="@font/inter_bold"
-                            android:text="@string/name_floor"
-                            android:textSize="14sp" />
-
-                    </RelativeLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:text="@string/name_capasity"
-                        android:textSize="12sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginVertical="8dp"
-                        android:text="@string/name_keterangan"
-                        android:textSize="12sp" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:orientation="horizontal"
-                        android:paddingBottom="16dp">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/ellipse_1" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="8dp"
-                                android:text="@string/name_status1"
-                                android:textSize="12sp" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="24dp"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/ellipse_2" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="8dp"
-                                android:text="@string/name_status2"
-                                android:textSize="12sp" />
-                        </LinearLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:background="@drawable/rounded_bg_time1"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time1"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginStart="8dp"
-                                android:background="@drawable/rounded_bg_time1"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time2"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginStart="8dp"
-                                android:background="@drawable/rounded_bg_time2"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time3"
-                                android:textColor="@color/white"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginStart="8dp"
-                                android:background="@drawable/rounded_bg_time1"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time4"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:gravity="center"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:background="@drawable/rounded_bg_time1"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time5"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginStart="8dp"
-                                android:background="@drawable/rounded_bg_time2"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time6"
-                                android:textColor="@color/white"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginStart="8dp"
-                                android:background="@drawable/rounded_bg_time1"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time7"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginStart="8dp"
-                                android:background="@drawable/rounded_bg_time1"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time8"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
-
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:backgroundTint="?attr/cardBackgroundColor"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="4dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <TextView
-                            android:id="@+id/textViewLeft2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentStart="true"
-                            android:fontFamily="@font/inter_bold"
-                            android:text="@string/name_room2"
-                            android:textColor="@color/green_900"
-                            android:textSize="14sp" />
-
-                        <TextView
-                            android:id="@+id/textViewRight2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentEnd="true"
-                            android:fontFamily="@font/inter_bold"
-                            android:text="@string/name_floor"
-                            android:textSize="14sp" />
-
-                    </RelativeLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:text="@string/name_capasity"
-                        android:textSize="12sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginVertical="8dp"
-                        android:text="@string/name_keterangan"
-                        android:textSize="12sp" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:orientation="horizontal"
-                        android:paddingBottom="16dp">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/ellipse_1" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="8dp"
-                                android:text="@string/name_status1"
-                                android:textSize="12sp" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="24dp"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/ellipse_2" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="8dp"
-                                android:text="@string/name_status2"
-                                android:textSize="12sp" />
-                        </LinearLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:background="@drawable/rounded_bg_time1"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time1"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginStart="8dp"
-                                android:background="@drawable/rounded_bg_time2"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time2"
-                                android:textColor="@color/white"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginStart="8dp"
-                                android:background="@drawable/rounded_bg_time1"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time3"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginStart="8dp"
-                                android:background="@drawable/rounded_bg_time1"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time4"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:gravity="center"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:background="@drawable/rounded_bg_time1"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time5"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginStart="8dp"
-                                android:background="@drawable/rounded_bg_time1"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time6"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginStart="8dp"
-                                android:background="@drawable/rounded_bg_time1"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time7"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginStart="8dp"
-                                android:background="@drawable/rounded_bg_time1"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time8"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
-
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:backgroundTint="?attr/cardBackgroundColor"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="4dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <TextView
-                            android:id="@+id/textViewLeft3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentStart="true"
-                            android:fontFamily="@font/inter_bold"
-                            android:text="@string/name_room3"
-                            android:textColor="@color/green_900"
-                            android:textSize="14sp" />
-
-                        <TextView
-                            android:id="@+id/textViewRight3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentEnd="true"
-                            android:fontFamily="@font/inter_bold"
-                            android:text="@string/name_floor2"
-                            android:textSize="14sp" />
-
-                    </RelativeLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:text="@string/name_capasity"
-                        android:textSize="12sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginVertical="8dp"
-                        android:text="@string/name_keterangan"
-                        android:textSize="12sp" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:orientation="horizontal"
-                        android:paddingBottom="16dp">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/ellipse_1" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="8dp"
-                                android:text="@string/name_status1"
-                                android:textSize="12sp" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="24dp"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/ellipse_2" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="8dp"
-                                android:text="@string/name_status2"
-                                android:textSize="12sp" />
-                        </LinearLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:background="@drawable/rounded_bg_time1"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time1"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginStart="8dp"
-                                android:background="@drawable/rounded_bg_time2"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time2"
-                                android:textColor="@color/white"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginStart="8dp"
-                                android:background="@drawable/rounded_bg_time1"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time3"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginStart="8dp"
-                                android:background="@drawable/rounded_bg_time1"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time4"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:gravity="center"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:background="@drawable/rounded_bg_time1"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time5"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginStart="8dp"
-                                android:background="@drawable/rounded_bg_time1"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time6"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginStart="8dp"
-                                android:background="@drawable/rounded_bg_time2"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time7"
-                                android:textColor="@color/white"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginStart="8dp"
-                                android:background="@drawable/rounded_bg_time1"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time8"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
-
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:backgroundTint="?attr/cardBackgroundColor"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="4dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <TextView
-                            android:id="@+id/textViewLeft4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentStart="true"
-                            android:fontFamily="@font/inter_bold"
-                            android:text="@string/name_room4"
-                            android:textColor="@color/green_900"
-                            android:textSize="14sp" />
-
-                        <TextView
-                            android:id="@+id/textViewRight4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentEnd="true"
-                            android:fontFamily="@font/inter_bold"
-                            android:text="@string/name_floor2"
-                            android:textSize="14sp" />
-
-                    </RelativeLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:text="@string/name_capasity"
-                        android:textSize="12sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginVertical="8dp"
-                        android:text="@string/name_keterangan"
-                        android:textSize="12sp" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:orientation="horizontal"
-                        android:paddingBottom="16dp">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/ellipse_1" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="8dp"
-                                android:text="@string/name_status1"
-                                android:textSize="12sp" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="24dp"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/ellipse_2" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="8dp"
-                                android:text="@string/name_status2"
-                                android:textSize="12sp" />
-                        </LinearLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:background="@drawable/rounded_bg_time1"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time1"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginStart="8dp"
-                                android:background="@drawable/rounded_bg_time2"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time2"
-                                android:textColor="@color/white"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginStart="8dp"
-                                android:background="@drawable/rounded_bg_time1"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time3"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginStart="8dp"
-                                android:background="@drawable/rounded_bg_time2"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time4"
-                                android:textColor="@color/white"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:gravity="center"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:background="@drawable/rounded_bg_time1"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time5"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginStart="8dp"
-                                android:background="@drawable/rounded_bg_time1"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time6"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginStart="8dp"
-                                android:background="@drawable/rounded_bg_time1"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time7"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginStart="8dp"
-                                android:background="@drawable/rounded_bg_time1"
-                                android:paddingHorizontal="16dp"
-                                android:paddingVertical="8dp"
-                                android:text="@string/time8"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
-
-        </LinearLayout>
-    </ScrollView>
+        android:layout_height="match_parent"
+        android:paddingVertical="32dp"
+        android:paddingHorizontal="24dp"
+        tools:listitem="@layout/item_room"/>
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:paddingVertical="32dp"-->
+<!--            android:paddingHorizontal="24dp"-->
+<!--            android:paddingBottom="32dp">-->
+
+<!--            <com.google.android.material.card.MaterialCardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="16dp"-->
+<!--                android:backgroundTint="?attr/cardBackgroundColor"-->
+<!--                app:cardCornerRadius="16dp"-->
+<!--                app:cardElevation="4dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_margin="16dp"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewLeft1"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_alignParentStart="true"-->
+<!--                            android:fontFamily="@font/inter_bold"-->
+<!--                            android:text="@string/name_room1"-->
+<!--                            android:textColor="@color/green_900"-->
+<!--                            android:textSize="14sp" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewRight1"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_alignParentEnd="true"-->
+<!--                            android:fontFamily="@font/inter_bold"-->
+<!--                            android:text="@string/name_floor"-->
+<!--                            android:textSize="14sp" />-->
+
+<!--                    </RelativeLayout>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="16dp"-->
+<!--                        android:text="@string/name_capasity"-->
+<!--                        android:textSize="12sp" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginVertical="8dp"-->
+<!--                        android:text="@string/name_keterangan"-->
+<!--                        android:textSize="12sp" />-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:gravity="center"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:paddingBottom="16dp">-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <ImageView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:src="@drawable/ellipse_1" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:paddingLeft="8dp"-->
+<!--                                android:text="@string/name_status1"-->
+<!--                                android:textSize="12sp" />-->
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="24dp"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <ImageView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:src="@drawable/ellipse_2" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:paddingLeft="8dp"-->
+<!--                                android:text="@string/name_status2"-->
+<!--                                android:textSize="12sp" />-->
+<!--                        </LinearLayout>-->
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:gravity="center"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:background="@drawable/rounded_bg_time1"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time1"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_marginStart="8dp"-->
+<!--                                android:background="@drawable/rounded_bg_time1"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time2"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_marginStart="8dp"-->
+<!--                                android:background="@drawable/rounded_bg_time2"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time3"-->
+<!--                                android:textColor="@color/white"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_marginStart="8dp"-->
+<!--                                android:background="@drawable/rounded_bg_time1"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time4"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="8dp"-->
+<!--                            android:gravity="center"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:background="@drawable/rounded_bg_time1"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time5"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_marginStart="8dp"-->
+<!--                                android:background="@drawable/rounded_bg_time2"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time6"-->
+<!--                                android:textColor="@color/white"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_marginStart="8dp"-->
+<!--                                android:background="@drawable/rounded_bg_time1"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time7"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_marginStart="8dp"-->
+<!--                                android:background="@drawable/rounded_bg_time1"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time8"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+<!--                        </LinearLayout>-->
+
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+<!--            </com.google.android.material.card.MaterialCardView>-->
+
+<!--            <com.google.android.material.card.MaterialCardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="16dp"-->
+<!--                android:backgroundTint="?attr/cardBackgroundColor"-->
+<!--                app:cardCornerRadius="16dp"-->
+<!--                app:cardElevation="4dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_margin="16dp"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewLeft2"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_alignParentStart="true"-->
+<!--                            android:fontFamily="@font/inter_bold"-->
+<!--                            android:text="@string/name_room2"-->
+<!--                            android:textColor="@color/green_900"-->
+<!--                            android:textSize="14sp" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewRight2"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_alignParentEnd="true"-->
+<!--                            android:fontFamily="@font/inter_bold"-->
+<!--                            android:text="@string/name_floor"-->
+<!--                            android:textSize="14sp" />-->
+
+<!--                    </RelativeLayout>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="16dp"-->
+<!--                        android:text="@string/name_capasity"-->
+<!--                        android:textSize="12sp" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginVertical="8dp"-->
+<!--                        android:text="@string/name_keterangan"-->
+<!--                        android:textSize="12sp" />-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:gravity="center"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:paddingBottom="16dp">-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <ImageView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:src="@drawable/ellipse_1" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:paddingLeft="8dp"-->
+<!--                                android:text="@string/name_status1"-->
+<!--                                android:textSize="12sp" />-->
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="24dp"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <ImageView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:src="@drawable/ellipse_2" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:paddingLeft="8dp"-->
+<!--                                android:text="@string/name_status2"-->
+<!--                                android:textSize="12sp" />-->
+<!--                        </LinearLayout>-->
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:gravity="center"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:background="@drawable/rounded_bg_time1"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time1"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_marginStart="8dp"-->
+<!--                                android:background="@drawable/rounded_bg_time2"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time2"-->
+<!--                                android:textColor="@color/white"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_marginStart="8dp"-->
+<!--                                android:background="@drawable/rounded_bg_time1"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time3"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_marginStart="8dp"-->
+<!--                                android:background="@drawable/rounded_bg_time1"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time4"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="8dp"-->
+<!--                            android:gravity="center"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:background="@drawable/rounded_bg_time1"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time5"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_marginStart="8dp"-->
+<!--                                android:background="@drawable/rounded_bg_time1"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time6"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_marginStart="8dp"-->
+<!--                                android:background="@drawable/rounded_bg_time1"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time7"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_marginStart="8dp"-->
+<!--                                android:background="@drawable/rounded_bg_time1"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time8"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+<!--                        </LinearLayout>-->
+
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+<!--            </com.google.android.material.card.MaterialCardView>-->
+
+<!--            <com.google.android.material.card.MaterialCardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="16dp"-->
+<!--                android:backgroundTint="?attr/cardBackgroundColor"-->
+<!--                app:cardCornerRadius="16dp"-->
+<!--                app:cardElevation="4dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_margin="16dp"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewLeft3"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_alignParentStart="true"-->
+<!--                            android:fontFamily="@font/inter_bold"-->
+<!--                            android:text="@string/name_room3"-->
+<!--                            android:textColor="@color/green_900"-->
+<!--                            android:textSize="14sp" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewRight3"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_alignParentEnd="true"-->
+<!--                            android:fontFamily="@font/inter_bold"-->
+<!--                            android:text="@string/name_floor2"-->
+<!--                            android:textSize="14sp" />-->
+
+<!--                    </RelativeLayout>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="16dp"-->
+<!--                        android:text="@string/name_capasity"-->
+<!--                        android:textSize="12sp" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginVertical="8dp"-->
+<!--                        android:text="@string/name_keterangan"-->
+<!--                        android:textSize="12sp" />-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:gravity="center"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:paddingBottom="16dp">-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <ImageView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:src="@drawable/ellipse_1" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:paddingLeft="8dp"-->
+<!--                                android:text="@string/name_status1"-->
+<!--                                android:textSize="12sp" />-->
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="24dp"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <ImageView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:src="@drawable/ellipse_2" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:paddingLeft="8dp"-->
+<!--                                android:text="@string/name_status2"-->
+<!--                                android:textSize="12sp" />-->
+<!--                        </LinearLayout>-->
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:gravity="center"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:background="@drawable/rounded_bg_time1"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time1"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_marginStart="8dp"-->
+<!--                                android:background="@drawable/rounded_bg_time2"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time2"-->
+<!--                                android:textColor="@color/white"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_marginStart="8dp"-->
+<!--                                android:background="@drawable/rounded_bg_time1"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time3"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_marginStart="8dp"-->
+<!--                                android:background="@drawable/rounded_bg_time1"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time4"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="8dp"-->
+<!--                            android:gravity="center"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:background="@drawable/rounded_bg_time1"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time5"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_marginStart="8dp"-->
+<!--                                android:background="@drawable/rounded_bg_time1"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time6"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_marginStart="8dp"-->
+<!--                                android:background="@drawable/rounded_bg_time2"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time7"-->
+<!--                                android:textColor="@color/white"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_marginStart="8dp"-->
+<!--                                android:background="@drawable/rounded_bg_time1"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time8"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+<!--                        </LinearLayout>-->
+
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+<!--            </com.google.android.material.card.MaterialCardView>-->
+
+<!--            <com.google.android.material.card.MaterialCardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="16dp"-->
+<!--                android:backgroundTint="?attr/cardBackgroundColor"-->
+<!--                app:cardCornerRadius="16dp"-->
+<!--                app:cardElevation="4dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_margin="16dp"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewLeft4"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_alignParentStart="true"-->
+<!--                            android:fontFamily="@font/inter_bold"-->
+<!--                            android:text="@string/name_room4"-->
+<!--                            android:textColor="@color/green_900"-->
+<!--                            android:textSize="14sp" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewRight4"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_alignParentEnd="true"-->
+<!--                            android:fontFamily="@font/inter_bold"-->
+<!--                            android:text="@string/name_floor2"-->
+<!--                            android:textSize="14sp" />-->
+
+<!--                    </RelativeLayout>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="16dp"-->
+<!--                        android:text="@string/name_capasity"-->
+<!--                        android:textSize="12sp" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginVertical="8dp"-->
+<!--                        android:text="@string/name_keterangan"-->
+<!--                        android:textSize="12sp" />-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:gravity="center"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:paddingBottom="16dp">-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <ImageView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:src="@drawable/ellipse_1" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:paddingLeft="8dp"-->
+<!--                                android:text="@string/name_status1"-->
+<!--                                android:textSize="12sp" />-->
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="24dp"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <ImageView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:src="@drawable/ellipse_2" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:paddingLeft="8dp"-->
+<!--                                android:text="@string/name_status2"-->
+<!--                                android:textSize="12sp" />-->
+<!--                        </LinearLayout>-->
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:gravity="center"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:background="@drawable/rounded_bg_time1"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time1"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_marginStart="8dp"-->
+<!--                                android:background="@drawable/rounded_bg_time2"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time2"-->
+<!--                                android:textColor="@color/white"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_marginStart="8dp"-->
+<!--                                android:background="@drawable/rounded_bg_time1"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time3"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_marginStart="8dp"-->
+<!--                                android:background="@drawable/rounded_bg_time2"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time4"-->
+<!--                                android:textColor="@color/white"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="8dp"-->
+<!--                            android:gravity="center"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:background="@drawable/rounded_bg_time1"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time5"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_marginStart="8dp"-->
+<!--                                android:background="@drawable/rounded_bg_time1"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time6"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_marginStart="8dp"-->
+<!--                                android:background="@drawable/rounded_bg_time1"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time7"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:layout_marginStart="8dp"-->
+<!--                                android:background="@drawable/rounded_bg_time1"-->
+<!--                                android:paddingHorizontal="16dp"-->
+<!--                                android:paddingVertical="8dp"-->
+<!--                                android:text="@string/time8"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+<!--                        </LinearLayout>-->
+
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+<!--            </com.google.android.material.card.MaterialCardView>-->
+
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
 
 </LinearLayout>

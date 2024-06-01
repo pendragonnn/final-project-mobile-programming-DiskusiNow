@@ -27,7 +27,7 @@ class ViewModelFactory  private constructor(
             modelClass.isAssignableFrom(RegisterViewModel::class.java) -> {
                 RegisterViewModel(authRepository) as T
             }
-            modelClass.isAssignableFrom(RoomRepository::class.java) -> {
+            modelClass.isAssignableFrom(RoomViewModel::class.java) -> {
                 RoomViewModel(roomRepository) as T
             }
             else -> throw IllegalArgumentException("Unknown ViewModel class: ${modelClass.name}")
