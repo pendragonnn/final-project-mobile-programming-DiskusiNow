@@ -1,4 +1,4 @@
-package com.dev.final_project_diskusinow.UI.register
+package com.dev.final_project_diskusinow.ui.register
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

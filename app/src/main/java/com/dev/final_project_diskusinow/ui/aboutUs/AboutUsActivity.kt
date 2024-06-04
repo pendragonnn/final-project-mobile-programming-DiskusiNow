@@ -1,15 +1,14 @@
-package com.dev.final_project_diskusinow.UI.resultPage
+package com.dev.final_project_diskusinow.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.dev.final_project_diskusinow.R
-import com.dev.final_project_diskusinow.databinding.ActivityResultPageBinding
+import com.dev.final_project_diskusinow.databinding.ActivityAboutUsBinding
 
-class ResultPageActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityResultPageBinding
+class AboutUsActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityAboutUsBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityResultPageBinding.inflate(layoutInflater)
+        binding = ActivityAboutUsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.btnBack.setOnClickListener{

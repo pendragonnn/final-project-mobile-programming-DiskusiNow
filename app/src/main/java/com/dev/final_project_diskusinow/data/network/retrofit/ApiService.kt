@@ -2,6 +2,7 @@ package com.dev.final_project_diskusinow.data.network.retrofit
 
 import com.dev.final_project_diskusinow.data.network.request.LoginRequest
 import com.dev.final_project_diskusinow.data.network.request.RegisterRequest
+import com.dev.final_project_diskusinow.data.network.response.HistoryUserResponse
 import com.dev.final_project_diskusinow.data.network.response.LoginResponse
 import com.dev.final_project_diskusinow.data.network.response.RegisterResponse
 import com.dev.final_project_diskusinow.data.network.response.RoomResponse
@@ -24,6 +25,9 @@ interface ApiService {
 
     @GET("room")
     suspend fun getRoom() : RoomResponse
+
+    @GET("user/history")
+    suspend fun getHistory() : HistoryUserResponse
 }
 
 annotation class NoAuth

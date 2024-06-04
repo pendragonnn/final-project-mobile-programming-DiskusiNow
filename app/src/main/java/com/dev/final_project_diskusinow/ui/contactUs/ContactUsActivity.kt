@@ -1,8 +1,7 @@
-package com.dev.final_project_diskusinow.UI
+package com.dev.final_project_diskusinow.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.dev.final_project_diskusinow.R
 import com.dev.final_project_diskusinow.databinding.ActivityContactUsBinding
 
 class ContactUsActivity : AppCompatActivity() {

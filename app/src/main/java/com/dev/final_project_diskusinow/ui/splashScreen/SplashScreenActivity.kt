@@ -1,4 +1,4 @@
-package com.dev.final_project_diskusinow.UI.splashScreen
+package com.dev.final_project_diskusinow.ui.splashScreen
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import com.dev.final_project_diskusinow.R
-import com.dev.final_project_diskusinow.UI.LoginActivity
+import com.dev.final_project_diskusinow.ui.LoginActivity
 
 class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

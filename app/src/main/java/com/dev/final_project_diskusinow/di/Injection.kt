@@ -4,6 +4,7 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import com.dev.final_project_diskusinow.data.network.ApiConfig
 import com.dev.final_project_diskusinow.data.repository.AuthRepository
+import com.dev.final_project_diskusinow.data.repository.HistoryRepository
 import com.dev.final_project_diskusinow.data.repository.RoomRepository
 import com.dev.final_project_diskusinow.utils.AppExecutors
 import com.dev.final_project_diskusinow.utils.UserPreferences
@@ -19,8 +20,14 @@ object Injection {
     fun provideRoomRepository(dataStore: DataStore<Preferences>) : RoomRepository {
         val authRepository = provideAuthRepository(dataStore)
         val apiService = ApiConfig.getApiServiceWithAuth(authRepository)
-
         val appExecutors = AppExecutors()
         return RoomRepository.getInstance(apiService, appExecutors)
+    }
+
+    fun provideHistoryRepository(dataStore: DataStore<Preferences>) : HistoryRepository {
+        val authRepository = provideAuthRepository(dataStore)
+        val apiService = ApiConfig.getApiServiceWithAuth(authRepository)
+        val appExecutors = AppExecutors()
+        return HistoryRepository.getInstance(apiService, appExecutors)
     }
 }

@@ -1,4 +1,4 @@
-package com.dev.final_project_diskusinow.UI.roomInformation
+package com.dev.final_project_diskusinow.ui.roomInformation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -14,6 +14,9 @@ class RoomViewModel(private val roomRepository: RoomRepository) : ViewModel() {
     private val _dataRoom = MutableSharedFlow<Result<List<DataItem?>?>>()
     val dataRoom : Flow<Result<List<DataItem?>?>> = _dataRoom.asSharedFlow()
 
+    init {
+        getAllRoom()
+    }
 
     fun getAllRoom() {
         viewModelScope.launch {

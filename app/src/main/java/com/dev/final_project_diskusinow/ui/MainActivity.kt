@@ -1,11 +1,11 @@
-package com.dev.final_project_diskusinow.UI
+package com.dev.final_project_diskusinow.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.view.GravityCompat
 import com.dev.final_project_diskusinow.R
-import com.dev.final_project_diskusinow.UI.resultPage.ResultPageActivity
+import com.dev.final_project_diskusinow.ui.resultPage.ResultPageActivity
 import com.dev.final_project_diskusinow.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

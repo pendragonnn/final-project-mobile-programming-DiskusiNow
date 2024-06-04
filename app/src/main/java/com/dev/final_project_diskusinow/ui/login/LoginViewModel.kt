@@ -1,4 +1,4 @@
-package com.dev.final_project_diskusinow.UI.login
+package com.dev.final_project_diskusinow.ui.login
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

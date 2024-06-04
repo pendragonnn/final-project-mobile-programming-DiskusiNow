@@ -1,4 +1,4 @@
-package com.dev.final_project_diskusinow.UI
+package com.dev.final_project_diskusinow.ui
 
 import android.content.Context
 import androidx.datastore.core.DataStore
@@ -6,17 +6,20 @@ import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.dev.final_project_diskusinow.UI.login.LoginViewModel
-import com.dev.final_project_diskusinow.UI.register.RegisterViewModel
-import com.dev.final_project_diskusinow.UI.roomInformation.RoomViewModel
 import com.dev.final_project_diskusinow.data.repository.AuthRepository
+import com.dev.final_project_diskusinow.data.repository.HistoryRepository
 import com.dev.final_project_diskusinow.data.repository.RoomRepository
 import com.dev.final_project_diskusinow.di.Injection
+import com.dev.final_project_diskusinow.ui.history.HistoryViewModel
+import com.dev.final_project_diskusinow.ui.login.LoginViewModel
+import com.dev.final_project_diskusinow.ui.register.RegisterViewModel
+import com.dev.final_project_diskusinow.ui.roomInformation.RoomViewModel
 
 private val Context.dataStore : DataStore<Preferences> by preferencesDataStore(name = "application")
 class ViewModelFactory  private constructor(
     private val authRepository: AuthRepository,
-    private val roomRepository: RoomRepository
+    private val roomRepository: RoomRepository,
+    private val historyRepository: HistoryRepository
 ) : ViewModelProvider.NewInstanceFactory(){
     @Suppress("UNCHECKED_CAST")
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
@@ -30,6 +33,9 @@ class ViewModelFactory  private constructor(
             modelClass.isAssignableFrom(RoomViewModel::class.java) -> {
                 RoomViewModel(roomRepository) as T
             }
+            modelClass.isAssignableFrom(HistoryViewModel::class.java) -> {
+                HistoryViewModel(historyRepository) as T
+            }
             else -> throw IllegalArgumentException("Unknown ViewModel class: ${modelClass.name}")
         }
     }
@@ -42,7 +48,8 @@ class ViewModelFactory  private constructor(
             return INSTANCE ?: synchronized(this) {
                 val authRepository = Injection.provideAuthRepository(context.dataStore)
                 val roomRepository = Injection.provideRoomRepository(context.dataStore)
-                ViewModelFactory(authRepository, roomRepository).also {
+                val historyRepository = Injection.provideHistoryRepository(context.dataStore)
+                ViewModelFactory(authRepository, roomRepository, historyRepository).also {
                     INSTANCE = it
                 }
             }

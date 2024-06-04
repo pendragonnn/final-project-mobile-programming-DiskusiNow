@@ -7,7 +7,7 @@
     android:paddingHorizontal="24dp"
     android:paddingTop="40dp"
     android:orientation="vertical"
-    tools:context=".UI.LoginActivity">
+    tools:context=".ui.LoginActivity">
 
     <!--  Logo & Welcome Message Linear Layout  -->
     <LinearLayout

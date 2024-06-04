@@ -1,13 +1,11 @@
-package com.dev.final_project_diskusinow.UI
+package com.dev.final_project_diskusinow.ui
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
-import com.dev.final_project_diskusinow.R
-import com.dev.final_project_diskusinow.UI.login.LoginViewModel
-import com.dev.final_project_diskusinow.UI.register.RegisterViewModel
+import com.dev.final_project_diskusinow.ui.register.RegisterViewModel
 import com.dev.final_project_diskusinow.data.network.request.RegisterRequest
 import com.dev.final_project_diskusinow.databinding.ActivityRegisterBinding
 import com.dev.final_project_diskusinow.utils.Result

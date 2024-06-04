@@ -14,28 +14,28 @@
         android:theme="@style/Theme.FinalprojectDiskusiNow"
         tools:targetApi="31">
         <activity
-            android:name=".UI.RegisterActivity"
+            android:name=".ui.RegisterActivity"
             android:exported="false"/>
         <activity
-            android:name=".UI.RoomInformationActivity"
+            android:name=".ui.RoomInformationActivity"
             android:exported="false" />
         <activity
-            android:name=".UI.resultPage.ResultPageActivity"
+            android:name=".ui.resultPage.ResultPageActivity"
             android:exported="false" />
         <activity
-            android:name=".UI.LoginActivity"
+            android:name=".ui.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".UI.ContactUsActivity"
+            android:name=".ui.ContactUsActivity"
             android:exported="false" />
         <activity
-            android:name=".UI.HistoryBookingActivity"
+            android:name=".ui.HistoryBookingActivity"
             android:exported="false" />
         <activity
-            android:name=".UI.AboutUsActivity"
+            android:name=".ui.AboutUsActivity"
             android:exported="false" />
         <activity
-            android:name=".UI.splashScreen.SplashScreenActivity"
+            android:name=".ui.splashScreen.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,7 +44,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".UI.MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true">
         </activity>
 
