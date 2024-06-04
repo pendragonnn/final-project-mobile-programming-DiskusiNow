@@ -7,12 +7,12 @@ data class RoomResponse(
 )
 
 data class SlotsItem(
-	val roomId: Int? = null,
-	val startTime: String? = null,
+	val room_id: Int? = null,
+	val start_time: String? = null,
 	val createdAt: String? = null,
-	val endTime: String? = null,
+	val end_time: String? = null,
 	val id: Int? = null,
-	val isBooked: Boolean? = null,
+	val is_booked: Boolean? = null,
 	val updatedAt: String? = null
 )
 
