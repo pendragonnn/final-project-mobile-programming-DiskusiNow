@@ -55,7 +55,7 @@ class AuthRepository private constructor(
     }.flowOn(appExecutors.networkIoDispatcher)
     suspend fun saveUserToken(userToken: String) = userPreferences.saveTokenUser(userToken)
 
-    suspend fun getUserToken() : Flow<String?> = userPreferences.getTokenUser()
+    fun getUserToken() : Flow<String?> = userPreferences.getTokenUser()
 
     suspend fun deleteUserToken() = userPreferences.deleteTokenUser()
     companion object {

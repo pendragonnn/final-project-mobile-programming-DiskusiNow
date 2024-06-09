@@ -96,12 +96,13 @@
                     android:inputType="textPassword" />
 
                 <ImageView
+                    android:id="@+id/btn_show_password"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:layout_marginEnd="8dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerInParent="true"
-                    android:src="@drawable/ic_login_padlock" />
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ic_lock_hide_password" />
             </RelativeLayout>
 
 

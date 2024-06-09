@@ -7,6 +7,7 @@ import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.dev.final_project_diskusinow.data.repository.AuthRepository
+import com.dev.final_project_diskusinow.data.repository.BookingRepository
 import com.dev.final_project_diskusinow.data.repository.HistoryRepository
 import com.dev.final_project_diskusinow.data.repository.RoomRepository
 import com.dev.final_project_diskusinow.di.Injection
@@ -19,7 +20,8 @@ private val Context.dataStore : DataStore<Preferences> by preferencesDataStore(n
 class ViewModelFactory  private constructor(
     private val authRepository: AuthRepository,
     private val roomRepository: RoomRepository,
-    private val historyRepository: HistoryRepository
+    private val historyRepository: HistoryRepository,
+    private val bookingRepository: BookingRepository
 ) : ViewModelProvider.NewInstanceFactory(){
     @Suppress("UNCHECKED_CAST")
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
@@ -36,6 +38,9 @@ class ViewModelFactory  private constructor(
             modelClass.isAssignableFrom(HistoryViewModel::class.java) -> {
                 HistoryViewModel(historyRepository) as T
             }
+            modelClass.isAssignableFrom(MainViewModel::class.java) -> {
+                MainViewModel(authRepository, bookingRepository) as T
+            }
             else -> throw IllegalArgumentException("Unknown ViewModel class: ${modelClass.name}")
         }
     }
@@ -49,7 +54,8 @@ class ViewModelFactory  private constructor(
                 val authRepository = Injection.provideAuthRepository(context.dataStore)
                 val roomRepository = Injection.provideRoomRepository(context.dataStore)
                 val historyRepository = Injection.provideHistoryRepository(context.dataStore)
-                ViewModelFactory(authRepository, roomRepository, historyRepository).also {
+                val bookingRepository = Injection.provideBookingRepository(context.dataStore)
+                ViewModelFactory(authRepository, roomRepository, historyRepository, bookingRepository).also {
                     INSTANCE = it
                 }
             }

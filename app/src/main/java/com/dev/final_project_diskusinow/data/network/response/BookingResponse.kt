@@ -2,10 +2,10 @@ package com.dev.final_project_diskusinow.data.network.response
 
 import com.google.gson.annotations.SerializedName
 
-data class HistoryUserResponse(
+data class BookingResponse(
 
 	@field:SerializedName("data")
-	val data: List<DataHistory?>? = null,
+	val data: DataBooking? = null,
 
 	@field:SerializedName("message")
 	val message: String? = null,
@@ -14,7 +14,7 @@ data class HistoryUserResponse(
 	val status: Boolean? = null
 )
 
-data class DataHistory(
+data class DataBooking(
 
 	@field:SerializedName("date")
 	val date: String? = null,
@@ -25,14 +25,14 @@ data class DataHistory(
 	@field:SerializedName("room_name")
 	val room_name: String? = null,
 
-	@field:SerializedName("user_name")
-	val user_name: String? = null,
-
 	@field:SerializedName("createdAt")
 	val createdAt: String? = null,
 
 	@field:SerializedName("user_id")
 	val user_id: Int? = null,
+
+	@field:SerializedName("user_name")
+	val user_name: String? = null,
 
 	@field:SerializedName("description")
 	val description: String? = null,
@@ -44,7 +44,7 @@ data class DataHistory(
 	val no_phone: String? = null,
 
 	@field:SerializedName("time_booking")
-	val time_booking: String,
+	val time_booking: String? = null,
 
 	@field:SerializedName("participant")
 	val participant: Int? = null,

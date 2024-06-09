@@ -139,6 +139,17 @@
     <string name="form_description_hint">Masukan Keterangan Keperluan Anda</string>
     <string name="form_notes">Catatan Penting: Jika Anda tidak tiba di resepsionis dalam waktu 10 menit setelah waktu mulai yang Anda tentukan, reservasi Anda akan otomatis dibatalkan.</string>
 
+    <string name="choice_time">Pilih Waktu</string>
+    <string-array name="time_picker">
+        <item>08:00</item>
+        <item>09:00</item>
+        <item>10:00</item>
+        <item>11:00</item>
+        <item>13:00</item>
+        <item>14:00</item>
+        <item>15:00</item>
+        <item>16:00</item>
+    </string-array>
     <string-array name="form_room_spinner">
         <item>Pilih Ruangan</item>
         <item>Ruang 1A</item>

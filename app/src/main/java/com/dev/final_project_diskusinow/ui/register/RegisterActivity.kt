@@ -2,12 +2,17 @@ package com.dev.final_project_diskusinow.ui
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.method.HideReturnsTransformationMethod
+import android.text.method.PasswordTransformationMethod
+import android.widget.EditText
+import android.widget.ImageView
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
-import com.dev.final_project_diskusinow.ui.register.RegisterViewModel
+import com.dev.final_project_diskusinow.R
 import com.dev.final_project_diskusinow.data.network.request.RegisterRequest
 import com.dev.final_project_diskusinow.databinding.ActivityRegisterBinding
+import com.dev.final_project_diskusinow.ui.register.RegisterViewModel
 import com.dev.final_project_diskusinow.utils.Result
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.coroutines.delay
@@ -24,32 +29,42 @@ class RegisterActivity : AppCompatActivity() {
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnRegister.setOnClickListener {
-            val name = binding.edtRegisterName.text.toString()
-            val email = binding.edtRegisterEmail.text.toString()
-            val nim = binding.edtRegisterNim.text.toString()
-            val password = binding.edtRegisterPassword.text.toString()
-            val confirmPassword = binding.edtRegisterConfirmPassword.text.toString()
+        setupListeners()
+        observeViewModel()
+    }
 
+    private fun setupListeners() {
+        binding.apply {
+            lockEdtPassword.setOnClickListener {
+                togglePasswordVisibility(edtRegisterPassword, lockEdtPassword)
+            }
+            lockEdtConfirmPassword.setOnClickListener {
+                togglePasswordVisibility(edtRegisterConfirmPassword, lockEdtConfirmPassword)
+            }
+            btnRegister.setOnClickListener {
+                val name = edtRegisterName.text.toString()
+                val email = edtRegisterEmail.text.toString()
+                val nim = edtRegisterNim.text.toString()
+                val password = edtRegisterPassword.text.toString()
+                val confirmPassword = edtRegisterConfirmPassword.text.toString()
 
-            if (name.isNotEmpty() && email.isNotEmpty() && nim.isNotEmpty() && password.isNotEmpty() && confirmPassword.isNotEmpty()) {
-                if (password == confirmPassword) {
-                    viewModel.registerUser(RegisterRequest(name, email, nim, password))
+                if (name.isNotEmpty() && email.isNotEmpty() && nim.isNotEmpty() && password.isNotEmpty() && confirmPassword.isNotEmpty()) {
+                    if (password == confirmPassword) {
+                        viewModel.registerUser(RegisterRequest(name, email, nim, password))
+                    } else {
+                        showSnackbar("Passwords do not match")
+                    }
                 } else {
-                    showSnackbar("Passwords do not match")
+                    showSnackbar("All fields are required")
                 }
-            } else {
-                showSnackbar("All fields are required")
+            }
+
+            tvClickHere.setOnClickListener {
+                val intent = Intent(this@RegisterActivity, LoginActivity::class.java)
+                startActivity(intent)
+                finish()
             }
         }
-
-        binding.tvClickHere.setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
-
-        observeViewModel()
     }
 
     private fun observeViewModel() {
@@ -72,7 +87,22 @@ class RegisterActivity : AppCompatActivity() {
         }
     }
 
+    private fun togglePasswordVisibility(editText: EditText, imageView: ImageView) {
+        val isPasswordVisible = editText.transformationMethod is PasswordTransformationMethod
+
+        if (isPasswordVisible) {
+            imageView.setImageResource(R.drawable.ic_lock_show_password)
+            editText.transformationMethod = HideReturnsTransformationMethod.getInstance()
+        } else {
+            imageView.setImageResource(R.drawable.ic_lock_hide_password)
+            editText.transformationMethod = PasswordTransformationMethod.getInstance()
+        }
+
+        editText.setSelection(editText.text.length)
+    }
+
     private fun showLoading(isLoading: Boolean) {
+
     }
 
     private fun showSnackbar(message: String) {

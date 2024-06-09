@@ -139,6 +139,7 @@
                                 android:layout_height="match_parent">
 
                                 <TextView
+                                    android:id="@+id/tv_date_hint"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/inter"
@@ -202,7 +203,7 @@
                                     android:text="@string/form_start_time" />
 
                                 <com.google.android.material.card.MaterialCardView
-                                    android:id="@+id/card_start_time"
+                                    android:id="@+id/cv_start_time"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="16dp"
@@ -210,8 +211,8 @@
                                     android:paddingVertical="8dp"
                                     app:cardCornerRadius="8dp">
 
-                                    <EditText
-                                        android:id="@+id/edt_start_date"
+                                    <TextView
+                                        android:id="@+id/edt_start_time"
                                         style="@style/TextEditComponent"
                                         android:hint="@string/form_start_time_hint"
                                         android:inputType="text"
@@ -233,6 +234,7 @@
                                     android:textSize="14sp"
                                     android:text="@string/form_total_participant" />
                                 <com.google.android.material.card.MaterialCardView
+                                    android:id="@+id/cv_participant"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     app:cardCornerRadius="8dp"
@@ -306,15 +308,16 @@
     </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
-        app:itemIconTint="@color/green_900"
-        android:paddingTop="20dp"
-        android:layout_marginStart="60dp"
         android:id="@+id/nav_view"
-        app:itemRippleColor="#CCE8FFE4"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:layout_marginStart="60dp"
         android:fitsSystemWindows="true"
-        app:menu="@menu/navigation_drawer" />
+        android:paddingTop="20dp"
+        app:itemIconTint="@color/green_900"
+        app:itemRippleColor="#CCE8FFE4"
+        app:menu="@menu/navigation_drawer"
+        tools:visibility="gone" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

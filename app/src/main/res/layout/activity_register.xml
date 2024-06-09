@@ -150,10 +150,10 @@
                         android:id="@+id/lock_edt_password"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
-                        android:layout_marginEnd="8dp"
                         android:layout_alignParentEnd="true"
                         android:layout_centerInParent="true"
-                        android:src="@drawable/ic_login_padlock" />
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/ic_lock_hide_password" />
                 </RelativeLayout>
             </com.google.android.material.card.MaterialCardView>
 
@@ -188,7 +188,7 @@
                         android:layout_alignParentEnd="true"
                         android:layout_centerInParent="true"
                         android:layout_marginEnd="8dp"
-                        android:src="@drawable/ic_login_padlock" />
+                        android:src="@drawable/ic_lock_hide_password" />
                 </RelativeLayout>
             </com.google.android.material.card.MaterialCardView>
 

@@ -1,5 +1,6 @@
 package com.dev.final_project_diskusinow.adapter
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
@@ -20,18 +21,30 @@ class HistoryAdapter : ListAdapter<DataHistory, HistoryAdapter.ViewHolder>(DIFF_
     }
 
     class ViewHolder(private val binding: ItemHistoryBinding) : RecyclerView.ViewHolder(binding.root) {
+        @SuppressLint("SetTextI18n")
         fun bind(history: DataHistory) {
             binding.apply {
                 tvIdHistory.text = "#${history.id}"
                 tvDate.text = history.date
                 tvPhoneNumber.text = history.no_phone
                 tvStartTime.text = history.time_booking
+                tvEndTime.text = addOneHour(history.time_booking)
                 tvDescription.text = history.description
                 tvParticipant.text = "${history.participant} Orang"
+                tvRoom.text = history.room_name
+                tvName.text = history.user_name
             }
         }
 
+        private fun addOneHour(time: String): String {
+            val (hours, minutes) = time.split(":").map { it.toInt() }
+            val newHours = (hours + 1).let {
+                if (it < 10) "0$it" else it.toString()
+            }
+            return "$newHours:${minutes}0"
+        }
     }
+
 
     companion object {
         val DIFF_CALLBACK = object : DiffUtil.ItemCallback<DataHistory>() {
