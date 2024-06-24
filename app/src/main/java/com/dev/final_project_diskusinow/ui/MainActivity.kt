@@ -1,6 +1,8 @@
 package com.dev.final_project_diskusinow.ui
 
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.widget.ListView
 import androidx.activity.viewModels
@@ -197,7 +199,9 @@ class MainActivity : AppCompatActivity() {
             .setCancelable(false)
             .create()
 
-        dialogBinding.tvResultId.text = bookingResponse.data?.id.toString()
+        dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
+        dialogBinding.tvResultId.text = "#${bookingResponse.data?.id.toString()}"
         dialogBinding.tvResultDate.text = bookingResponse.data?.date
         dialogBinding.tvResultName.text = bookingResponse.data?.user_name
         dialogBinding.tvResultNoPhone.text = bookingResponse.data?.no_phone
